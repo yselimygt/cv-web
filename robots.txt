@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yavuzselimyigit.com/sitemap.xml

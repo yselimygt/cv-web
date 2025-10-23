@@ -1,0 +1,96 @@
+/* ========= YSY • Global CSS ========= */
+
+/* Temel tema değişkenleri */
+:root{
+  --bg:#0F172A;        /* slate-900 */
+  --text:#F8FAFC;      /* slate-50  */
+  --card:#1E293B;      /* slate-800 */
+  --muted:#94A3B8;     /* slate-400 */
+  --brand:#3B82F6;     /* blue-500  */
+  --ring:#334155;      /* slate-700 */
+}
+
+html[data-theme="light"]{
+  --bg:#FFFFFF;
+  --text:#0F172A;
+  --card:#F1F5F9;      /* slate-100 */
+  --muted:#334155;     /* slate-700 */
+  --brand:#1D4ED8;     /* blue-700  */
+  --ring:#CBD5E1;      /* slate-300 */
+}
+
+/* Baz stil */
+html,body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* Yardımcılar */
+.text-muted{color:var(--muted)}
+.bg-card{background:var(--card)}
+.ring-muted{border-color:var(--ring)}
+.text-gradient{
+  background:linear-gradient(90deg,#1D4ED8,#3B82F6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* Kart ve hover gölge */
+.card{
+  background:var(--card);
+  border:1px solid var(--ring);
+  border-radius:16px;
+  transition:border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.card:hover{
+  border-color:var(--brand);
+  box-shadow:0 10px 24px rgba(59,130,246,.18);
+}
+
+/* İlerleme barı ve "başa dön" butonu */
+#scroll-progress{
+  position:fixed; top:0; left:0; height:4px; width:0;
+  background:linear-gradient(90deg,#22C55E,#3B82F6);
+  z-index:60;
+}
+#backToTop{
+  position:fixed; right:16px; bottom:16px; z-index:60;
+  opacity:0; transform:translateY(10px);
+  transition:opacity .3s, transform .3s, border-color .2s;
+}
+#backToTop.show{opacity:1; transform:translateY(0)}
+
+/* Typewriter satırı */
+.typewriter{min-height:1.5em; border-right:2px solid var(--muted)}
+
+/* Progres bar komponenti */
+.bar{height:8px; border-radius:6px; background:#334155}
+.bar>span{display:block; height:100%; border-radius:6px; background:linear-gradient(90deg,#22C55E,#3B82F6)}
+
+/* Renkli tech stack rozetleri */
+.tech-badge{
+  display:inline-flex; gap:.4rem; align-items:center;
+  padding:.35rem .7rem; border-radius:9999px; border:1px solid currentColor;
+  font-weight:600; font-size:.825rem; line-height:1;
+}
+.tech-python{color:#2563EB; background:rgba(37,99,235,.12)}
+.tech-c{color:#0891B2; background:rgba(8,145,178,.12)}
+.tech-cpp{color:#7C3AED; background:rgba(124,58,237,.12)}
+.tech-cs{color:#16A34A; background:rgba(22,163,74,.12)}
+.tech-qt{color:#22C55E; background:rgba(34,197,94,.12)}
+.tech-figma{color:#EF4444; background:rgba(239,68,68,.12)}
+.tech-canva{color:#06B6D4; background:rgba(6,182,212,.12)}
+.tech-stm{color:#0284C7; background:rgba(2,132,199,.12)}
+
+/* Erişilebilirlik: hareket azaltma tercihleri */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important}
+}
+
+/* Yazdırma */
+@media print{
+  header, #scroll-progress, #backToTop { display:none !important; }
+  a[href]::after{ content:" (" attr(href) ")"; font-size:.9em; color:#555 }
+}

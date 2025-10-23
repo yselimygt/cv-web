@@ -1,0 +1,15 @@
+# api/.htaccess
+
+# Dizin listelemeyi kapat
+Options -Indexes
+
+# Sadece sendmail.php'ye POST izin ver
+<Files "sendmail.php">
+  <LimitExcept POST>
+    Order Deny,Allow
+    Deny from all
+  </LimitExcept>
+</Files>
+
+# JSON tipini zorla (içeride header’la zaten set ediyoruz ama yedek)
+AddType application/json .json

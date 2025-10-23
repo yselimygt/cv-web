@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yavuz Selim Yiğit – Elektrik-Elektronik • Portföy</title>
+    <meta name="description"
+        content="Elektrik-Elektronik, Gömülü Sistemler, Python, UI/UX ve otomasyon. Küçük detaylar büyük farklar yaratır." />
+    <link rel="canonical" href="https://yavuzselimyigit.com/" />
+    <meta name="theme-color" content="#0F172A" />
+
+    <!-- OG / Twitter -->
+    <meta property="og:title" content="Yavuz Selim Yiğit – Portföy | ViperaDev" />
+    <meta property="og:description" content="Teknik derinliği insan odaklı deneyimle birleştiriyorum." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yavuzselimyigit.com/" />
+    <meta property="og:image" content="/assets/og-share.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yavuz Selim Yiğit – Portföy" />
+    <meta name="twitter:description" content="Elektrik-Elektronik, Gömülü Sistemler, Python, UI/UX" />
+    <meta name="twitter:image" content="/assets/og-share.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/career.css" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/assets/icons/icon-32.png" sizes="32x32" />
+</head>
+
+<body class="min-h-screen">
+    <div id="scroll-progress"></div>
+
+    <header class="sticky top-0 z-50 backdrop-blur-md border-b ring-muted px-4 sm:px-6 py-3"
+        style="background:color-mix(in oklab, var(--bg) 92%, transparent)">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-2 text-xl font-extrabold">
+                <img src="/assets/ysy_logo.png" alt="YSY" class="w-6 h-6" /><span class="text-gradient">YSY</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-5 text-sm">
+                <a href="#hakkimda" class="hover:text-blue-400">Hakkımda</a>
+                <a href="#uzmanlik" class="hover:text-blue-400">Uzmanlık</a>
+                <a href="#projeler" class="hover:text-blue-400">Projeler</a>
+                <a href="#kariyer" class="hover:text-blue-400">Kariyer</a>
+                <a href="#sertifikalar" class="hover:text-blue-400">Sertifikalar</a>
+                <a href="#iletisim" class="hover:text-blue-400">İletişim</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button id="themeToggle"
+                    class="px-3 py-1 rounded-full border ring-muted hover:bg-blue-500/10">🌙/☀️</button>
+                <button id="mobileBtn" class="md:hidden px-3 py-1 rounded-full border ring-muted">☰</button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden border-t ring-muted">
+            <div class="max-w-6xl mx-auto px-4 py-3 grid grid-cols-2 gap-2 text-sm">
+                <a href="#hakkimda" class="py-2">Hakkımda</a>
+                <a href="#uzmanlik" class="py-2">Uzmanlık</a>
+                <a href="#projeler" class="py-2">Projeler</a>
+                <a href="#kariyer" class="py-2">Kariyer</a>
+                <a href="#sertifikalar" class="py-2">Sertifikalar</a>
+                <a href="#iletisim" class="py-2">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6">
+        <!-- HERO -->
+        <section id="hero" class="text-center py-16 sm:py-24">
+            <img src="/assets/profile.webp" width="128" height="128" alt="Yavuz Selim Yiğit"
+                class="mx-auto rounded-full border-4" style="border-color:var(--brand)" decoding="async"
+                fetchpriority="high" />
+            <h1 class="text-4xl sm:text-6xl font-extrabold mt-4"><span class="text-gradient">Yavuz Selim Yiğit</span>
+            </h1>
+            <p class="mt-3 text-xl text-muted">Elektrik-Elektronik Mühendisliği Öğrencisi</p>
+            <p id="typewriter" class="typewriter mx-auto mt-4 text-lg max-w-2xl"></p>
+            <div class="mt-6 flex items-center justify-center gap-3">
+                <a href="#projeler" class="px-5 py-3 rounded-full font-semibold text-white"
+                    style="background:var(--brand)">Projelerimi Keşfet</a>
+                <a href="/assets/Yavuz_Selim_Yigit_CV.pdf" download class="px-5 py-3 rounded-full border ring-muted">CV
+                    İndir</a>
+            </div>
+        </section>
+
+        <!-- HAKKIMDA -->
+        <section id="hakkimda" class="py-12">
+            <h2 class="text-3xl font-bold text-center">Hakkımda</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-400">Mühendislik & Strateji</h3>
+                    <p class="mt-2 text-muted">Teknik mimariyi, kullanıcı odaklı değer yaratma ile birleştiriyorum.
+                        Sistem entegrasyonu ve sade arayüzleri seviyorum.</p>
+                    <ul class="list-disc ml-5 mt-3 text-sm text-muted">
+                        <li>NEÜ – Elektrik-Elektronik Mühendisliği (2024–2028)</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-400">Çalışma Felsefesi</h3>
+                    <p class="mt-2"><b>“Küçük detaylar büyük farklar yaratır.”</b> Planlı başlar, sezgisel ilerlerim.
+                        Gece üretkenliğini severim.</p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="tech-badge tech-python">Python</span>
+                        <span class="tech-badge tech-c">C</span>
+                        <span class="tech-badge tech-cpp">C++</span>
+                        <span class="tech-badge tech-cs">C#/.NET</span>
+                        <span class="tech-badge tech-qt">PyQt5 / Qt</span>
+                        <span class="tech-badge tech-figma">Figma</span>
+                        <span class="tech-badge tech-canva">Canva</span>
+                        <span class="tech-badge tech-stm">STM32</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UZMANLIK -->
+        <section id="uzmanlik" class="py-12">
+            <h2 class="text-3xl font-bold text-center">Uzmanlık</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-400">Gömülü Sistemler</h3>
+                    <p class="text-muted mt-2">C/C++, STM32/ESP32, Raspberry Pi. Sensör entegrasyonu ve gerçek zamanlı
+                        kontrol.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-400">Masaüstü & Backend</h3>
+                    <p class="text-muted mt-2">Python, PyQt5, C#/.NET. Sade ve stabil masaüstü araçları.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-blue-400">UI/UX & Görsel Kimlik</h3>
+                    <p class="text-muted mt-2">Kullanıcı deneyimini mühendislik projelerine entegre ediyorum.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJELER -->
+        <section id="projeler" class="py-12">
+            <h2 class="text-3xl font-bold text-center">Projeler</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <article class="card p-6">
+                    <div class="overflow-hidden rounded-lg border ring-muted">
+                        <img data-src="/assets/proj-viperadeck.webp" alt="ViperaDeck"
+                            class="w-full h-44 object-cover lazy-img" width="800" height="400" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">ViperaDeck (v1.4.4)</h3>
+                    <p class="text-muted mt-2">PyQt5 ile masaüstü üretkenlik aracı. Global kısayollar, System Tray,
+                        sürükle-bırak kartlar.</p>
+                    <a href="https://github.com/ViperaDev/ViperaDeck" target="_blank" rel="noopener"
+                        class="inline-block mt-3 text-blue-400">GitHub →</a>
+                </article>
+                <article class="card p-6">
+                    <div class="overflow-hidden rounded-lg border ring-muted">
+                        <img data-src="/assets/proj-zephyr.webp" alt="Zephyr İHA Simülasyonu"
+                            class="w-full h-44 object-cover lazy-img" width="800" height="400" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold">Zephyr İHA – Otonom Simülasyon</h3>
+                    <p class="text-muted mt-2">ArduPilot + Gazebo + ROS2 mimarisinde Python/MAVLink ile görev planlama
+                        ve RTL optimizasyonu.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- KARIYER (Timeline) -->
+        <section id="kariyer" class="py-12">
+            <h2 class="text-3xl font-bold text-center">Kariyer Zaman Çizelgesi</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+
+            <div class="mt-6 flex flex-wrap items-center justify-center gap-2">
+                <button class="flt-btn" data-filter="all">Tümü</button>
+                <button class="flt-btn" data-filter="engineering">Mühendislik</button>
+                <button class="flt-btn" data-filter="embedded">Gömülü</button>
+                <button class="flt-btn" data-filter="simulation">Simülasyon</button>
+                <button class="flt-btn" data-filter="uiux">UI/UX</button>
+                <button class="flt-btn" data-filter="community">Topluluk</button>
+                <button class="flt-btn" data-filter="design">Tasarım</button>
+                <button class="flt-btn" data-filter="entrepreneurship">Girişim</button>
+                <button class="flt-btn" data-filter="games">Oyun</button>
+                <button class="flt-btn" data-filter="mobile">Mobil</button>
+                <button class="flt-btn" data-filter="learning">Öğrenme</button>
+            </div>
+
+            <section id="timeline" class="timeline mt-10"></section>
+            <p class="text-center text-xs text-slate-500 mt-10">Veriler <code>career.json</code>’dan yüklenir.</p>
+        </section>
+
+        <!-- SERTİFİKALAR -->
+        <section id="sertifikalar" class="py-12">
+            <h2 class="text-3xl font-bold text-center">Sertifikalar</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+            <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card p-4 flex items-center justify-between"><span>İleri Seviye Python</span><span
+                        class="tech-badge tech-python">Turkcell</span></div>
+                <div class="card p-4 flex items-center justify-between"><span>C Programlama</span><span
+                        class="tech-badge tech-c">BTK</span></div>
+                <div class="card p-4 flex items-center justify-between"><span>C++ Programlama</span><span
+                        class="tech-badge tech-cpp">BTK</span></div>
+                <div class="card p-4 flex items-center justify-between"><span>Figma UI/UX</span><span
+                        class="tech-badge tech-figma">Udemy</span></div>
+                <div class="card p-4 flex items-center justify-between"><span>Canva Tasarım</span><span
+                        class="tech-badge tech-canva">BTK</span></div>
+            </div>
+        </section>
+
+        <!-- HEDEF / ODAK -->
+        <section class="py-12">
+            <div class="card p-6">
+                <p class="text-center text-blue-400 font-semibold">🔬 ŞU ANDA ODAK NOKTAM</p>
+                <p class="text-center mt-1">STM32 senkronizasyonu (C++) ve ViperaDeck v2.0 için Qt UI optimizasyonu.</p>
+                <div class="grid sm:grid-cols-3 gap-4 mt-4 text-sm">
+                    <div>
+                        <p class="text-center">ViperaDeck v2.0</p>
+                        <div class="bar mt-1"><span style="width:82%"></span></div>
+                        <p class="text-center mt-1 font-bold">82%</p>
+                    </div>
+                    <div>
+                        <p class="text-center">STM32 Test</p>
+                        <div class="bar mt-1"><span style="width:45%"></span></div>
+                        <p class="text-center mt-1 font-bold">45%</p>
+                    </div>
+                    <div>
+                        <p class="text-center">Yeni İHA Modülü</p>
+                        <div class="bar mt-1"><span style="width:15%"></span></div>
+                        <p class="text-center mt-1 font-bold">15%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İLETİŞİM -->
+        <section id="iletisim" class="py-12">
+            <h2 class="text-3xl font-bold text-center">İletişim</h2>
+            <div class="h-px w-20 bg-slate-600 mx-auto mt-4"></div>
+            <form id="contactForm" class="card p-6 max-w-2xl mx-auto space-y-3" novalidate>
+                <div><label for="name" class="block text-sm text-muted">Adınız / Kurum</label>
+                    <input id="name" name="name" required
+                        class="mt-1 w-full px-3 py-2 rounded-md bg-transparent border ring-muted focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Adınız" />
+                </div>
+                <div><label for="email" class="block text-sm text-muted">E-posta</label>
+                    <input id="email" name="email" type="email" required
+                        class="mt-1 w-full px-3 py-2 rounded-md bg-transparent border ring-muted focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="mail@ornek.com" />
+                </div>
+                <div><label for="msg" class="block text-sm text-muted">Mesaj</label>
+                    <textarea id="msg" name="msg" rows="4" required
+                        class="mt-1 w-full px-3 py-2 rounded-md bg-transparent border ring-muted focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Varsayımlarınızı yazın…"></textarea>
+                </div>
+                <button class="px-5 py-3 rounded-md font-semibold text-white" style="background:var(--brand)">Mesajı
+                    Gönder (Simüle)</button>
+                <p id="formToast" class="hidden text-center text-sm"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="border-t ring-muted mt-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 text-center text-sm text-muted">
+            <p id="yearText"></p>
+            <div class="mt-2 flex items-center justify-center gap-4">
+                <a href="mailto:yavuzselimyigit06@outlook.com" class="hover:text-blue-400">E-posta</a>
+                <a href="https://linkedin.com/in/yavuz-selim-yigit" target="_blank" rel="noopener"
+                    class="hover:text-blue-400">LinkedIn</a>
+                <a href="https://github.com/yselimygt" target="_blank" rel="noopener"
+                    class="hover:text-blue-400">GitHub</a>
+                <a href="https://instagram.com/yselimygt" target="_blank" rel="noopener"
+                    class="hover:text-blue-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Başa dön"
+        class="rounded-full p-3 border ring-muted bg-card hover:border-blue-500">↑</button>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/career.js" defer></script>
+</body>
+
+</html>
